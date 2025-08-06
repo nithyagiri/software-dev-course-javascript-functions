@@ -33,7 +33,7 @@ This activity reinforces:
 // ============================================
 
 // Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
+/*console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
@@ -72,3 +72,49 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+//Script 1 - Greeting multiple users
+
+function greeting(name) {
+    return console.log("Welcome, " + name +  "!");
+}
+
+// Script 2 - Sum calculation
+
+function sumCalc(num1,num2) {
+    let sum = num1 + num2;
+    return console.log("The sum of " + num1 + " and " + num2 +" is " + sum);
+}
+
+// Script 3 - Product calculation
+
+function productCalc(no1,no2) {
+    let productCalc = no1 * no2;
+    return console.log("The product of " + no1 + " and " + no2 +" is " + productCalc);
+}
+
+// Script 4 - Print names from a list
+
+function listPrint(namesArray) {
+  console.log("Names in the list:");
+for (let i = 0; i < namesArray.length; i++) {
+    console.log(namesArray[i]);
+}
+}
+
+let names = ["Alice", "Bob", "Charlie"];
+
+//Function calls
+greeting("Alice");
+greeting("Bob");
+greeting("charlie");
+
+sumCalc( 5,10);
+
+productCalc( 5,10);
+
+listPrint(names);
+
+
+
+
+
